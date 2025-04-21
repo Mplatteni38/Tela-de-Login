@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("https://picsum.photos/1600/900?random=1" );
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style:normal;
+    font-weight: normal;
+}
+.container{
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgb(151, 151, 151);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 30px 40px;
+
+}
+
+.cotainer2{
+   margin-top: -5%;
+    display: flex;
+    gap: 333px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 50px 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(136, 57, 57)
+
+}
+
+.cotainer2 img{
+     margin-top: +50%;
+     width: 100%;
+     display: block;
+     border-radius: 10px;
+     animation: moverLados 5s infinite ease-in-out;
+
+}
+
+.Time{
+     position: relative;
+    max-width: 300px;
+    border-radius: 10px;
+
+}
+
+.Time h1{
+   position: absolute;
+  top: -5px;
+  left: 0;
+   font-size: 36px;
+    color: rgb(145, 13, 221);
+    z-index: 1;
+}
+
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    color: rgb(78, 76, 76);
+}
+.botao-input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+.botao-input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.botao-input input::placeholder{
+    color:  #fff;
+}
+
+.botao-input img {
+    position: absolute;
+    right: 24px;
+    margin-top: 5px;
+    top: 6px;
+}
+
+.container a {
+    font-size: 16px;
+    margin-top: 5px;
+    color: rgb(66, 0, 248);
+    text-decoration: none;
+    
+}
+
+.container a:hover{
+    text-decoration: underline;
+  
+}
+
+.container button{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(156, 14, 238, 0.719);
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+
+
+
+}
+
+.container button:hover{
+    background-color: rgba(172, 57, 238, 0.719);
+
+}
+
+.cadastro{
+    text-align: center;
+    margin-top: 20px ;
+}
+
+
+
+.container  a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+
+    
+}
+
+.container  p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: lighter;
+    
+}
+
+.container  p a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .area-login {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .Time {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .Time h1 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@keyframes moverLados {
+    0% {
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#digitando{
+    color: aqua;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+   
+   
+    <div class="cotainer2">
+        <div class="Time">
+            <h1 id="digitando">Entre Para nosso Time</h1>
+       <img src="imagem/robo-01.png" alt="">
+        </div>
+        <div class="form-2">
+           <form>
+        
+           </form>
+        </div>
+    </div>
+
+   
+   
+   
+   
+    <div class="container">
+      
+     
+      
+        <form>
+            <h1>Entrar na Plataforma</h1>
+        <div class=" botao-input">
+            <input placeholder="Email" type="Email" required>
+            <img src="https://icons.iconarchive.com/icons/iconsmind/outline/128/Envelope-2-icon.png" width="20" height="20" >
+
+          
+
+        </div>
+        
+        <div class=" botao-input"> 
+            <input placeholder="Senha" type="password" required>
+            <img src="https://icons.iconarchive.com/icons/icons8/ios7/128/User-Interface-Password-icon.png" width="20" height="20"alt="Senha">
+          
+            <a href="#">Esqueci minha Senha</a>
+       
+        </div>
+          <button type="submit">Entrar</button>
+
+          <div class="cadastro">
+            <p>Não está cadastrado ?<a href=""> Cadastrar</a> </p>
+          </div>
+
+        </form>
+
+       
+
+
+ </div>
+    <script>
+        const texto = "Entre Para nosso Time";
+        const titulo = document.getElementById("digitando")
+        let index = 0;
+        function escrever () {
+            titulo. textContent += texto.charAt(index);
+            index++;
+            if (index < texto.length) {
+            setTimeout(escrever,100);
+            }
+        }
+            window.onload = () => {
+           titulo.textContent= "";
+                escrever();
+        };
+    </script>
+</body>
+</html>
